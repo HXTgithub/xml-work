@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<clients xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/13739/Desktop/hotel/App_Data/client.xsd">
+  <client>
+    <clientname>1373948524</clientname>
+    <clientroom>101</clientroom>
+    <clientphone>18133336666</clientphone>
+    <roomdate>2024-12-18</roomdate>
+    <roomtime>4</roomtime>
+  </client>
+  <client>
+    <clientname>1373948524</clientname>
+    <clientroom>201</clientroom>
+    <clientphone>18143990263</clientphone>
+    <roomdate>2024-12-18</roomdate>
+    <roomtime>3</roomtime>
+  </client>
+  <client>
+    <clientname>user4</clientname>
+    <clientroom>401</clientroom>
+    <clientphone>18511112222</clientphone>
+    <roomdate>2024-12-23</roomdate>
+    <roomtime>4</roomtime>
+  </client>
+  <client>
+    <clientname>user4</clientname>
+    <clientroom>401</clientroom>
+    <clientphone>18536524865</clientphone>
+    <roomdate>2024-12-20</roomdate>
+    <roomtime>5</roomtime>
+  </client>
+</clients>

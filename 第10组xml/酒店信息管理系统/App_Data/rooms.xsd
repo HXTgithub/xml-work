@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:attribute name="roomid" type="xs:string"/>
+	<xs:attribute name="roomtype" type="Roomtype"/>
+	<xs:simpleType name="Roomtype">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="大床房"/>
+			<xs:enumeration value="双床房"/>
+			<xs:enumeration value="情侣房"/>
+			<xs:enumeration value="家庭房"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="sales" type="xs:string"/>
+	<xs:element name="roomsize" type="xs:string"/>
+	<xs:element name="people" type="xs:string"/>
+	<xs:element name="bed" type="xs:string"/>
+	<xs:element name="price" type="xs:string"/>
+	<xs:element name="condition" type="conditype"/>
+	<xs:simpleType name="conditype">
+		<xs:restriction base="xs:string">
+		    <xs:enumeration value="已预订"/>
+		    <xs:enumeration value="未预订"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="photo" type="xs:string"/>
+	<xs:element name="room">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="roomsize"/>
+				<xs:element ref="bed"/>
+				<xs:element ref="sales"/>
+				<xs:element ref="people"/>
+				<xs:element ref="price"/>
+				<xs:element ref="condition"/>
+				<xs:element ref="photo"/>
+			</xs:sequence>
+			<xs:attribute ref="roomid"/>
+			<xs:attribute ref="roomtype"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="rooms">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="room" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="roomidunique">
+			<xs:selector xpath="./room"/>
+			<xs:field xpath="@roomid"/>
+		</xs:unique>
+	</xs:element>
+</xs:schema>

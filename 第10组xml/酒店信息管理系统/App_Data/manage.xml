@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<manages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/13739/Desktop/hotel/App_Data/manage.xsd">
+  <manage>
+    <managename>1373948524</managename>
+    <managemima>114514</managemima>
+    <managesex>男</managesex>
+    <managephone>18143990263</managephone>
+  </manage>
+  <manage>
+    <managename>123456</managename>
+    <managemima>123456</managemima>
+    <managesex>男</managesex>
+    <managephone>18143990263</managephone>
+  </manage>
+  <manage>
+    <managename>LXP666</managename>
+    <managemima>114514</managemima>
+    <managesex>男</managesex>
+    <managephone>12345678912</managephone>
+  </manage>
+  <manage>
+    <managename>admin</managename>
+    <managemima>112233</managemima>
+    <managesex>男</managesex>
+    <managephone>18536852658</managephone>
+  </manage>
+  <manage>
+    <managename>admin1</managename>
+    <managemima>123456</managemima>
+    <managesex>男</managesex>
+    <managephone>18536852658</managephone>
+  </manage>
+  <manage>
+    <managename>admin3</managename>
+    <managemima>112233</managemima>
+    <managesex>男</managesex>
+    <managephone>18536852658</managephone>
+  </manage>
+</manages>

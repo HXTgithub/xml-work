@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="username" type="usernametype"/>
+	<xs:simpleType name="usernametype">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Za-z0-9]{3,30}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="usermima" type="usermimatype"/>
+	<xs:simpleType name="usermimatype">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="6"/>
+			<xs:pattern value="[A-Za-z0-9]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="sex" type="sextype"/>
+	<xs:simpleType name="sextype">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="男"/>
+			<xs:enumeration value="女"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="mibaoquestion" type="xs:string"/>
+	<xs:element name="mibaoanser" type="xs:string"/>
+	<xs:element name="tel" type="teltype"/>
+	<xs:simpleType name="teltype">
+		<xs:restriction base="xs:string">
+			<xs:length value="11"/>
+			<xs:pattern value="1[3-9][0-9]{9}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="email" type="emailtype"/>
+	<xs:simpleType name="emailtype">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="birthdate" type="xs:date"/>
+	<xs:element name="photo" type="xs:string"/>
+	<xs:element name="user" type="usertype"/>
+	<xs:complexType name="usertype">
+		<xs:sequence>
+			<xs:element ref="username"/>
+			<xs:element ref="usermima"/>
+			<xs:element ref="sex"/>
+			<xs:element ref="mibaoquestion"/>
+			<xs:element ref="mibaoanser"/>
+			<xs:element ref="tel"/>
+			<xs:element ref="email"/>
+			<xs:element ref="birthdate"/>
+			<xs:element ref="photo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="users" type="userstype">
+		<xs:unique name="usernameunique">
+			<xs:selector xpath="./user"/>
+			<xs:field xpath="@username"/>
+		</xs:unique>
+	</xs:element>
+	<xs:complexType name="userstype">
+		<xs:sequence>
+			<xs:element ref="user" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

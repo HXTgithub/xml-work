@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rooms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/13739/Desktop/hotel/App_Data/rooms.xsd">
+  <room roomid="101" roomtype="双床房">
+    <roomsize>30平方米</roomsize>
+    <bed>1.2米大床</bed>
+    <sales>800+</sales>
+    <people>2人</people>
+    <price>200</price>
+    <condition>已预订</condition>
+    <photo>~/photo/room1.png</photo>
+  </room>
+  <room roomid="201" roomtype="大床房">
+    <roomsize>35平方米</roomsize>
+    <bed>1.9米大床</bed>
+    <sales>500+</sales>
+    <people>1人</people>
+    <price>350</price>
+    <condition>已预订</condition>
+    <photo>~/photo/room3.png</photo>
+  </room>
+  <room roomid="301" roomtype="亲子房">
+    <roomsize>35平方米</roomsize>
+    <bed>1.9米大床</bed>
+    <sales>500+</sales>
+    <people>3人</people>
+    <price>400</price>
+    <condition>已预订</condition>
+    <photo>~/photo/room1.png</photo>
+  </room>
+  <room roomid="401" roomtype="超值房">
+    <roomsize>20平方米</roomsize>
+    <bed>1.9米大床</bed>
+    <sales>500+</sales>
+    <people>3人</people>
+    <price>700</price>
+    <condition>未预订</condition>
+    <photo>~/photo/room1.png</photo>
+  </room>
+</rooms>

@@ -1,0 +1,47 @@
+<Comments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="comments.xsd">
+  <Comment>
+    <User>张三</User>
+    <Text>这家酒店非常不错，服务人员热情周到，房间干净整洁。</Text>
+    <Time>2024-12-09T10:00:00</Time>
+  </Comment>
+  <Comment>
+    <User>李四</User>
+    <Text>位置很好，交通便利，推荐入住。</Text>
+    <Time>2024-12-09T10:05:00</Time>
+  </Comment>
+  <Comment>
+    <User>1373948524</User>
+    <Text>你的房间666</Text>
+    <Time>2024-12-15 12:49:41</Time>
+  </Comment>
+  <Comment>
+    <User>LXP666</User>
+    <Text>你的房间菜菜菜</Text>
+    <Time>2024-12-15 16:33:18</Time>
+  </Comment>
+  <Comment>
+    <User>1373948524</User>
+    <Text>不错不错，很好</Text>
+    <Time>2024-12-15 18:31:14</Time>
+  </Comment>
+  <Comment>
+    <User>1373948524</User>
+    <Text>666</Text>
+    <Time>2024-12-15 18:39:59</Time>
+  </Comment>
+  <Comment>
+    <User>user1</User>
+    <Text>这里的房间很不错，值得推荐！！</Text>
+    <Time>2024-12-15 21:16:22</Time>
+  </Comment>
+  <Comment>
+    <User>user2</User>
+    <Text>你好，你好，你好你好你好</Text>
+    <Time>2024-12-16 08:23:50</Time>
+  </Comment>
+  <Comment>
+    <User>user4</User>
+    <Text>666</Text>
+    <Time>2024-12-16 10:07:01</Time>
+  </Comment>
+</Comments>

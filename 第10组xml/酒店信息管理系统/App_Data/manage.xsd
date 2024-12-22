@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="managename" type="managenametype"/>
+	<xs:simpleType name="managenametype">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Za-z0-9]{3,30}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="managemima" type="managemimatype"/>
+	<xs:simpleType name="managemimatype">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="6"/>
+			<xs:pattern value="[A-Za-z0-9]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="managesex" type="msextype"/>
+	<xs:simpleType name="msextype">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="男"/>
+			<xs:enumeration value="女"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="managephone" type="xs:string"/>
+	<xs:element name="manage" type="managetype"/>
+	<xs:complexType name="managetype">
+	<xs:sequence>
+	    <xs:element ref="managename"/>
+	    <xs:element ref="managemima"/>
+	    <xs:element ref="managesex"/>
+	    <xs:element ref="managephone"/>
+	</xs:sequence>
+	</xs:complexType>
+	<xs:element name="manages" type="managestype"/>
+	<xs:complexType name="managestype">
+	<xs:sequence>
+	    <xs:element ref="manage" maxOccurs="unbounded"/>
+	</xs:sequence>
+	</xs:complexType>
+</xs:schema>

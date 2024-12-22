@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<!-- 定义根元素 -->
+	<xs:element name="Comments">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- 定义重复的 Comment 元素 -->
+				<xs:element name="Comment" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<!-- 定义 User 子元素 -->
+							<xs:element name="User" type="xs:string" minOccurs="1" maxOccurs="1"/>
+							<!-- 定义 Text 子元素 -->
+							<xs:element name="Text" type="xs:string" minOccurs="1" maxOccurs="1"/>
+							<!-- 定义 Time 子元素 -->
+							<xs:element name="Time" type="xs:dateTime" minOccurs="1" maxOccurs="1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="clientname" type="xs:string"/>
+	<xs:element name="clientroom" type="xs:string"/>
+	<xs:element name="clientphone" type="xs:string"/>
+	<xs:element name="roomdate" type="xs:date"/>
+	<xs:element name="roomtime" type="xs:int"/>
+	<xs:element name="client" type="clienttype"/>
+	<xs:complexType name="clienttype">
+		<xs:sequence>
+			<xs:element ref="clientname"/>
+			<xs:element ref="clientroom"/>
+			<xs:element ref="clientphone"/>
+			<xs:element ref="roomdate"/>
+			<xs:element ref="roomtime"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="clients" type="clientstype"/>
+	<xs:complexType name="clientstype">
+		<xs:sequence>
+			<xs:element ref="client" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
